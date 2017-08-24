@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0934163A1F41C230000553F3 /* NSArray+Log.m in Sources */ = {isa = PBXBuildFile; fileRef = 093416391F41C230000553F3 /* NSArray+Log.m */; };
 		096618A31F414C6A003EBA0D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 096618A21F414C6A003EBA0D /* main.m */; };
 		096618A61F414C6A003EBA0D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 096618A51F414C6A003EBA0D /* AppDelegate.m */; };
 		096618A91F414C6A003EBA0D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 096618A81F414C6A003EBA0D /* ViewController.m */; };
@@ -15,6 +16,7 @@
 		096618B11F414C6A003EBA0D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 096618AF1F414C6A003EBA0D /* LaunchScreen.storyboard */; };
 		096618BC1F414C6A003EBA0D /* APNSTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 096618BB1F414C6A003EBA0D /* APNSTests.m */; };
 		096618C71F414C6A003EBA0D /* APNSUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 096618C61F414C6A003EBA0D /* APNSUITests.m */; };
+		474F211D171120D262A071D4 /* libPods-APNS.a in Frameworks */ = {isa = PBXBuildFile; fileRef = A3DA0B0328E9C7B7842F4015 /* libPods-APNS.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +37,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		093416371F41A562000553F3 /* APNS.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = APNS.entitlements; sourceTree = "<group>"; };
+		093416381F41C230000553F3 /* NSArray+Log.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSArray+Log.h"; sourceTree = "<group>"; };
+		093416391F41C230000553F3 /* NSArray+Log.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSArray+Log.m"; sourceTree = "<group>"; };
 		0966189E1F414C6A003EBA0D /* APNS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = APNS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		096618A21F414C6A003EBA0D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		096618A41F414C6A003EBA0D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +56,9 @@
 		096618C21F414C6A003EBA0D /* APNSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = APNSUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		096618C61F414C6A003EBA0D /* APNSUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = APNSUITests.m; sourceTree = "<group>"; };
 		096618C81F414C6A003EBA0D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		77E331499B191A03340304E8 /* Pods-APNS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNS.release.xcconfig"; path = "Pods/Target Support Files/Pods-APNS/Pods-APNS.release.xcconfig"; sourceTree = "<group>"; };
+		A3DA0B0328E9C7B7842F4015 /* libPods-APNS.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-APNS.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		EF8545A129FB88C28ECFF543 /* Pods-APNS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-APNS.debug.xcconfig"; path = "Pods/Target Support Files/Pods-APNS/Pods-APNS.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +66,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				474F211D171120D262A071D4 /* libPods-APNS.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -85,6 +94,8 @@
 				096618BA1F414C6A003EBA0D /* APNSTests */,
 				096618C51F414C6A003EBA0D /* APNSUITests */,
 				0966189F1F414C6A003EBA0D /* Products */,
+				F199AEABEF85DD66533FB13E /* Pods */,
+				68426F14BA54AD0A395B4DA7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -101,10 +112,13 @@
 		096618A01F414C6A003EBA0D /* APNS */ = {
 			isa = PBXGroup;
 			children = (
+				093416371F41A562000553F3 /* APNS.entitlements */,
 				096618A41F414C6A003EBA0D /* AppDelegate.h */,
 				096618A51F414C6A003EBA0D /* AppDelegate.m */,
 				096618A71F414C6A003EBA0D /* ViewController.h */,
 				096618A81F414C6A003EBA0D /* ViewController.m */,
+				093416381F41C230000553F3 /* NSArray+Log.h */,
+				093416391F41C230000553F3 /* NSArray+Log.m */,
 				096618AA1F414C6A003EBA0D /* Main.storyboard */,
 				096618AD1F414C6A003EBA0D /* Assets.xcassets */,
 				096618AF1F414C6A003EBA0D /* LaunchScreen.storyboard */,
@@ -140,6 +154,23 @@
 			path = APNSUITests;
 			sourceTree = "<group>";
 		};
+		68426F14BA54AD0A395B4DA7 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A3DA0B0328E9C7B7842F4015 /* libPods-APNS.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		F199AEABEF85DD66533FB13E /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EF8545A129FB88C28ECFF543 /* Pods-APNS.debug.xcconfig */,
+				77E331499B191A03340304E8 /* Pods-APNS.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,9 +178,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 096618CB1F414C6A003EBA0D /* Build configuration list for PBXNativeTarget "APNS" */;
 			buildPhases = (
+				61A441564714C67A97BB9080 /* [CP] Check Pods Manifest.lock */,
 				0966189A1F414C6A003EBA0D /* Sources */,
 				0966189B1F414C6A003EBA0D /* Frameworks */,
 				0966189C1F414C6A003EBA0D /* Resources */,
+				17B035AA5445FD4CCF140986 /* [CP] Embed Pods Frameworks */,
+				1F6A331C7C38849E1B7A8C0A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -207,7 +241,16 @@
 				TargetAttributes = {
 					0966189D1F414C6A003EBA0D = {
 						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 4NWLSQ35T7;
 						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+							com.apple.Push = {
+								enabled = 1;
+							};
+						};
 					};
 					096618B61F414C6A003EBA0D = {
 						CreatedOnToolsVersion = 8.3.3;
@@ -268,12 +311,64 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		17B035AA5445FD4CCF140986 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNS/Pods-APNS-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		1F6A331C7C38849E1B7A8C0A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-APNS/Pods-APNS-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		61A441564714C67A97BB9080 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-APNS-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		0966189A1F414C6A003EBA0D /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				096618A91F414C6A003EBA0D /* ViewController.m in Sources */,
+				0934163A1F41C230000553F3 /* NSArray+Log.m in Sources */,
 				096618A61F414C6A003EBA0D /* AppDelegate.m in Sources */,
 				096618A31F414C6A003EBA0D /* main.m in Sources */,
 			);
@@ -371,7 +466,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -414,7 +509,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -424,22 +519,28 @@
 		};
 		096618CC1F414C6A003EBA0D /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EF8545A129FB88C28ECFF543 /* Pods-APNS.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNS/APNS.entitlements;
+				DEVELOPMENT_TEAM = 4NWLSQ35T7;
 				INFOPLIST_FILE = APNS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zst.a.APNS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zst.zjkfqpush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
 		};
 		096618CD1F414C6A003EBA0D /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 77E331499B191A03340304E8 /* Pods-APNS.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = APNS/APNS.entitlements;
+				DEVELOPMENT_TEAM = 4NWLSQ35T7;
 				INFOPLIST_FILE = APNS/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.zst.a.APNS;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zst.zjkfqpush;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -509,6 +610,7 @@
 				096618CD1F414C6A003EBA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		096618CE1F414C6A003EBA0D /* Build configuration list for PBXNativeTarget "APNSTests" */ = {
 			isa = XCConfigurationList;
@@ -517,6 +619,7 @@
 				096618D01F414C6A003EBA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		096618D11F414C6A003EBA0D /* Build configuration list for PBXNativeTarget "APNSUITests" */ = {
 			isa = XCConfigurationList;
@@ -525,6 +628,7 @@
 				096618D31F414C6A003EBA0D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
